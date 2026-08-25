@@ -1,6 +1,3 @@
-const express = require('express');
-const { buildProfile } = require('../astro/chartBuilder');
-const { generateReading } = require('../services/geminiService');
 
 const router = express.Router();
 
