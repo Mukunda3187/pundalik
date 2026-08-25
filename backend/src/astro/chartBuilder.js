@@ -14,7 +14,7 @@ const { computeNumerology } = require('./numerology');
  * @param {number} input.longitude
  * @param {string} input.placeName
  */
-function buildProfile(input) {
+function buildPfile(input) {
   const { name, day, month, year, hour, minute, tzOffsetHours, latitude, longitude, placeName } = input;
 
   // Convert local civil time to UTC
