@@ -4,7 +4,7 @@ const axios = require('axios');
 const MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`;
 
-async function callGemini(systemPrompt, userPrompt, maxOutputTokens = 3000) {
+async function callGemini(systemPrompt,, maxOutputTokens = 3000) {
   const apiKey = process.env.GOOGLE_API_KEY;
   if (!apiKey) {
     throw new Error('GOOGLE_API_KEY is not set in the backend .env file');
@@ -93,7 +93,7 @@ exact shape:
     { "title": "Wealth & Finance", "content": "..." },
     { "title": "Earning Style", "content": "..." },
     { "title": "Best Investments", "content": "..." },
-    { "title": "Financial Risks", "content": "..." }
+    { "title": "Financial Risks", "content": "..." 
   ],
   "health": [
     { "title": "Health & Vitality", "content": "..." },
