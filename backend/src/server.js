@@ -23,5 +23,4 @@ app.use((req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Pundalik backend running on http://localhost:${PORT}`);
 });
